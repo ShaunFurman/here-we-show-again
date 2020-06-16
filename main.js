@@ -20,7 +20,7 @@ mainElement.append(kata1Heading)
 *** Log the even numbers from 1 to 20. (2, 4, 6,...18,20)
 ***
 ***/
-console.log('%cKATA 02 RESULTS:', 'background: darkblue; color: white; font-weight: bold;') 
+console.log('%cKATA 02 RESULTS:', 'background: darkblue; color: white; font-weight: bold;')
 // let counter2a = 1
 // while (counter2a <= 20) {
 //   if (counter2a % 2 === 0)
@@ -53,7 +53,7 @@ const kata3Heading = document.createElement('h1')
 
 let counter3b = 1
 while (counter3b < 20) {
-    console.log(counter3b)
+  console.log(counter3b)
   kata3Heading.append(counter3b)
   counter3b += 2
 }
@@ -70,9 +70,9 @@ const kata4Heading = document.createElement('h1')
 
 let counter4 = 5
 while (counter4 <= 100) {
-console.log(counter4)
-kata4Heading.append(counter4)
-counter4 += 5
+  console.log(counter4)
+  kata4Heading.append(counter4)
+  counter4 += 5
 }
 mainElement.append('Kata 4')
 mainElement.append(kata4Heading)
@@ -120,8 +120,8 @@ const kata7Heading = document.createElement('h1')
 let counter7 = 20
 while (counter7 >= 1) {
   if (counter7 % 2 === 0) {
-  console.log(counter7)
-  kata7Heading.append(counter7 +', ')
+    console.log(counter7)
+    kata7Heading.append(counter7 + ', ')
   }
   counter7 -= 1
 }
@@ -137,8 +137,8 @@ const kata8Heading = document.createElement('h1')
 let counter8 = 20
 while (counter8 >= 1) {
   if (counter8 % 2 !== 0) {
-  console.log(counter8)
-  kata8Heading.append(counter8 + ', ')
+    console.log(counter8)
+    kata8Heading.append(counter8 + ', ')
   }
   counter8 -= 1
 }
@@ -172,8 +172,8 @@ let counter10 = 100
 while (counter10 >= 1) {
   const isSquare = Number.isInteger(Math.sqrt(counter10));
   if (isSquare) {
-  console.log(counter10)
-  kata10Heading.append(counter10 + ', ')
+    console.log(counter10)
+    kata10Heading.append(counter10 + ', ')
   }
   counter10 -= 1
 }
@@ -183,13 +183,14 @@ mainElement.append(kata10Heading)
 // kata 11--Display the 20 elements of sampleArray. (469, 755, 244, …, 940, 472)
 console.log('%cKATA 11 RESULTS:', 'background: darkblue; color: white; font-weight: bold;')
 const kata11Heading = document.createElement('h1')
-    const sampleArray = [
-    469, 755, 244, 245, 758, 450, 302, 20, 712, 71, 
-    456, 21, 398, 339, 882, 848, 179, 535, 940, 472,
+const sampleArray = [
+  469, 755, 244, 245, 758, 450, 302, 20, 712, 71,
+  456, 21, 398, 339, 882, 848, 179, 535, 940, 472,
 ];
 
-for(let index = 0; index < sampleArray.length; index ++) {
-    kata11Heading.append(sampleArray[index] + ', ')
+for (let index = 0; index < sampleArray.length; index++) {
+  kata11Heading.append(sampleArray[index] + ', ')
+  console.log(sampleArray[index] + ', ')
 }
 mainElement.append('Kata Eleven')
 mainElement.append(kata11Heading)
@@ -198,11 +199,12 @@ mainElement.append(kata11Heading)
 
 console.log('%cKATA 12 RESULTS:', 'background: darkblue; color: white; font-weight: bold;')
 const kata12Heading = document.createElement('h1')
-    
-for(let index = 0; index < sampleArray.length; index ++) {
-    if(sampleArray[index] % 2 === 0) {
-        kata12Heading.append(sampleArray[index] + ', ')
-    }
+
+for (let index = 0; index < sampleArray.length; index++) {
+  if (sampleArray[index] % 2 === 0) {
+    kata12Heading.append(sampleArray[index] + ', ')
+    console.log(sampleArray[index] + ', ')
+  }
 }
 mainElement.append('Kata 12')
 mainElement.append(kata12Heading)
@@ -211,11 +213,12 @@ mainElement.append(kata12Heading)
 
 console.log('%cKATA 13 RESULTS:', 'background: darkblue; color: white; font-weight: bold;')
 const kata13Heading = document.createElement('h1')
-    
-for(let index = 0; index < sampleArray.length; index ++) {
-    if(sampleArray[index] % 2 !== 0) {
-        kata13Heading.append(sampleArray[index] + ', ')
-    }
+
+for (let index = 0; index < sampleArray.length; index++) {
+  if (sampleArray[index] % 2 !== 0) {
+    kata13Heading.append(sampleArray[index] + ', ')
+    console.log(sampleArray[index] + ', ')
+  }
 }
 mainElement.append('Kata 13')
 mainElement.append(kata13Heading)
@@ -224,51 +227,80 @@ mainElement.append(kata13Heading)
 
 console.log('%cKATA 14 RESULTS:', 'background: darkblue; color: white; font-weight: bold;')
 const kata14Heading = document.createElement('h1')
-    
-for(let index = 0; index < sampleArray.length; index ++) {
-    
-        kata14Heading.append(sampleArray[index] * sampleArray[index] + ', ')
-    }
+
+for (let index = 0; index < sampleArray.length; index++) {
+
+  kata14Heading.append(sampleArray[index] * sampleArray[index] + ', ')
+  console.log(sampleArray[index] * sampleArray[index] + ', ')
+}
 
 mainElement.append('Kata 14')
 mainElement.append(kata14Heading)
 
 //Kata 15 Display the sum of all the numbers from 1 to 20.
+
 console.log('%cKATA 15 RESULTS:', 'background: darkblue; color: white; font-weight: bold;')
 const kata15Heading = document.createElement('h1')
 
 let variable = 0
-for(let index = 1; index <= 20; index ++) {
-    variable += index
-    kata15Heading.append(variable + ', ')
+for (let index = 1; index <= 20; index++) {
+  variable += index
+  kata15Heading.append(variable + ', ')
+  console.log(variable + ', ')
 }
 mainElement.append('Kata 15')
 mainElement.append(kata15Heading)
 
 //Kata 16 Display the sum of all the elements in sampleArray.
+
 console.log('%cKATA 16 RESULTS:', 'background: darkblue; color: white; font-weight: bold;')
 const kata16Heading = document.createElement('h1')
 let sum = 0
-for(let index = 0; index < sampleArray.length; index ++) {
-    sum += sampleArray[index]
-    
-}kata16Heading.append(sum)
+for (let index = 0; index < sampleArray.length; index++) {
+  sum += sampleArray[index]
+} 
+ kata16Heading.append(sum)
+console.log(sum)
 mainElement.append('Kata 16')
 mainElement.append(kata16Heading)
- //Kata 17 Display the smallest element in sampleArray.
 
- console.log('%cKATA 16 RESULTS:', 'background: darkblue; color: white; font-weight: bold;')
+//Kata 17 Display the smallest element in sampleArray.
+
+console.log('%cKATA 17 RESULTS:', 'background: darkblue; color: white; font-weight: bold;')
 const kata17Heading = document.createElement('h1')
 
 let currentIndex = 0
-let smallestIndex = sampleArray[0]
-for(let index = 0; index < sampleArray.length; index ++) {
-    if(sampleArray[index] > currentIndex) {
-    currentIndex = smallestIndex
-    sampleArray[index] ++
-    }
-    kata17Heading.append(smallestIndex)
-}
+let smallestNum = sampleArray[0]
+for (let index = 0; index < sampleArray.length; index++) {
+  if (sampleArray[index] < smallestNum) {
+    smallestNum = sampleArray[index]
 
+  }
+}
+kata17Heading.append(smallestNum)
+console.log(smallestNum)
+mainElement.append('Kata 17')
+mainElement.append(kata17Heading)
+
+// Kata18-Display the largest element in sampleArray.
+
+console.log('%cKATA 18 RESULTS:', 'background: darkblue; color: white; font-weight: bold;')
+const kata18Heading = document.createElement('h1')
+
+
+let largestNum = sampleArray[0]
+for (let index = 0; index < sampleArray.length; index++) {
+  if (sampleArray[index] > largestNum){
+    largestNum = sampleArray[index]
+  }
+}
+kata18Heading.append(largestNum)
+console.log(largestNum)
+mainElement.append('Kata 18')
+mainElement.append(kata18Heading)
+
+
+// 469, 755, 244, 245, 758, 450, 302, (20), 712, 71,
+// 456, 21, 398, 339, 882, 848, 179, 535, (940), 472,
 
 
